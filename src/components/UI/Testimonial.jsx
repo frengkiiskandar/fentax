@@ -8,15 +8,15 @@ import {Quotes} from '@phosphor-icons/react'
 // Import CSS Swiper
 import "swiper/css";
 import "swiper/css/pagination";
-import Star from "./Star";
+import Rating from "./Rating";
 
 
 export default function Testimonial() {
   return (
     <div className="w-full px-4 ">
         <div className="flex flex-col justify-center items-center gap-3 ">
-            <h3 className='uppercase text-lg lg:text-2xl'>What People Say</h3>
-            <h2 className='text-green-500 text-2xl lg:text-4xl font-medium lg:font-semibold'>Our Testimonials</h2>
+            <h3 className='uppercase text-sm lg:text-xl'>Apa Kata Mereka ?</h3>
+            <h2 className='text-green-500 text-2xl lg:text-4xl font-medium lg:font-semibold'>Testimoni Kami</h2>
         </div>
       <Swiper
         modules={[Autoplay, Pagination]}
@@ -42,7 +42,7 @@ export default function Testimonial() {
             <div className="w-full flex justify-center items-center">
                 <div className="card bg-base-100 p-6 text-center flex flex-col justify-center items-start max-w-[25rem] h-[20rem] lg:h-[25rem] ">
                     <div className="flex mb-4">
-                    {Star(t.rating)}
+                    <Rating rating={t.rating} />
                 </div>
                 <p className="italic mb-4 text-gray-700 text-xs lg:text-sm text-left">&quot;{t.message}&quot;</p>
                 <div className="w-full flex justify-between items-end">

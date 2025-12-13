@@ -1,7 +1,7 @@
 // utils/renderStars.jsx
 import React from "react";
 
-export default function Star(rating) {
+export default function Rating({rating}) {
   const stars = [];
   for (let i = 1; i <= 5; i++) {
     stars.push(

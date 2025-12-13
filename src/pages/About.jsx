@@ -1,7 +1,7 @@
 import person from '../assets/image/person.jpg'
 import showing1 from '../assets/image/sthemeit-1.png'
 import computerperson from '../assets/image/computerperson.jpg'
-import { Check, ChatCenteredDots, ClipboardText,UsersFour,Handshake, ChatCentered, LightbulbFilament} from "@phosphor-icons/react";
+import { Check, ChatCenteredDots, ClipboardText,Handshake,ShieldCheck, ChatCentered, LightbulbFilament,Medal} from "@phosphor-icons/react";
 import Testimonial from '../components/UI/Testimonial';
 
 
@@ -24,26 +24,26 @@ const About = () => {
                 <img src={showing1} alt="" className='lg:w-full h-full object-fill w-3/4' />
             </div>
             <div className='flex-1 py-10 flex flex-col justify-start items-start gap-5'>
-                <h3 className='tont-semibold'>Tax Finance Consultant</h3>
-                <h1 className='text-2xl font-medium lg:text-4xl'>We Provide The Best Service For Your Conveeince</h1>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium iure at velit nisi laboriosam voluptatum, optio, repellendus fuga, sint saepe odit itaque nesciunt est distinctio dolore! Pariatur ipsa quia enim!</p>
+                <h3 className='tont-semibold'>Solusi Perpajakan Profesional & Terpercaya</h3>
+                <h1 className='text-2xl font-medium lg:text-4xl'>Mitra Profesional untuk Kepatuhan Pajak Anda</h1>
+                <p>Kami menyediakan layanan konsultasi perpajakan yang akurat, patuh regulasi, dan efisien untuk individu maupun perusahaan. Dengan tim konsultan berpengalaman, kami membantu Anda mengelola kewajiban pajak secara optimal dan tepat waktu</p>
 
                 <div className='flex flex-col justify-start items-start gap-2'>
                     <div className='flex justify-start items-center gap-2'>
                         <Check size={20} />
-                        <p>Suspendisse molestie</p>
+                        <p>Konsultasi Pajak Pribadi & Badan</p>
                     </div>
                     <div className='flex justify-start items-center gap-2'>
                         <Check size={20} />
-                        <p>Vivamus vel Lectus</p>
+                        <p>Pelaporan & Pengisian SPT</p>
                     </div>
                     <div className='flex justify-start items-center gap-2'>
                         <Check size={20} />
-                        <p>Phasellus pulvinar</p>
+                        <p>Tax Planning & Tax Review</p>
                     </div>
                     <div className='flex justify-start items-center gap-2'>
                         <Check size={20} />
-                        <p>Arigatou</p>
+                        <p>Pendampingan Pemeriksaan Pajak</p>
                     </div>
                 </div>
                 <button className='text-white px-4 py-2 lg:px-7 lg:py-3 rounded-md font-medium lg:font-semibold bg-choco'>Selengkapnya</button>
@@ -52,46 +52,46 @@ const About = () => {
 
         <section className='w-full  px-5 py-10 lg:py-20 flex flex-col justify-center items-center gap-10 bg-primary text-center text-white'>
             <div>
-                <h1 className='mb-5 text-2xl lg:text-4xl font-medium lg:font-bold'>We Have  High <span className='text-choco'>Dedication</span> In The Field of Tax Advisory</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis quis nemo quod! Vero illum quod libero facilis, odit magnam tempore?</p>
+                <h1 className='mb-5 text-2xl lg:text-4xl font-medium lg:font-bold'>Kami Memiliki<span className='text-choco'> Dedikasi Tinggi</span> dalam Konsultasi Perpajakan</h1>
+                <p className='px-0 lg:px-10'>Kami berkomitmen memberikan layanan konsultasi pajak yang akurat, patuh regulasi, dan berorientasi pada solusi. Dengan pengalaman dan pemahaman mendalam terhadap peraturan perpajakan Indonesia, kami membantu klien mengelola kewajiban pajak secara efektif dan berkelanjutan.</p>
             </div>
 
             <div className='flex flex-wrap justify-center items-center gap-10 lg:gap-28'>
-                <div className='w-32 h-36 flex flex-col justify-center items-center gap-2 rounded-lg'>
+                <div className='w-32 md:w-48  h-36 flex flex-col justify-center items-center gap-2 rounded-lg'>
                     <ChatCenteredDots size={40} />
                     <p className='text-2xl lg:text-4xl'>1.345+</p>
-                    <p>Happy CLient</p>
+                    <p>Klien Puas</p>
                 </div>
-                <div className='w-32 h-36 flex flex-col justify-center items-center gap-2 rounded-lg'>
+                <div className='w-32 md:w-48  h-36 flex flex-col justify-center items-center gap-2 rounded-lg'>
                     <ClipboardText size={40} />
                     <p className='text-2xl lg:text-4xl'>1.000+</p>
-                    <p>Project Complete</p>
+                    <p>Proyek Selesai</p>
                 </div>
-                <div className='w-32 h-36 flex flex-col justify-center items-center gap-2 rounded-lg'>
-                    <Handshake size={40} />
+                <div className='w-32 md:w-48  h-36 flex flex-col justify-center items-center gap-2 rounded-lg'>
+                    <Medal size={40} />
                     <p className='text-2xl lg:text-4xl'>1.345+</p>
-                    <p>Happy CLient</p>
+                    <p>Berpengalaman</p>
                 </div>
-                <div className='w-32 h-36 flex flex-col justify-center items-center gap-2 rounded-lg'>
-                    <UsersFour size={40} />
-                    <p className='text-2xl lg:text-4xl'>1.345+</p>
-                    <p>Happy CLient</p>
+                <div className='w-32 md:w-48 h-36 flex flex-col justify-center items-center gap-2 rounded-lg'>
+                    <ShieldCheck size={40} />
+                    <p className='text-2xl lg:text-4xl'>99%</p>
+                    <p>Kepatuhan Pelaporan</p>
                 </div>
             </div>
         </section>
 
         <section className='px-5 py-10 lg:py-20 flex flex-col justify-center items-center gap-5 text-center'>
-            <h3 className='text-2xl lg:text-3xl'>WORK PROCESS</h3>
-            <h1>See Our Workflow</h1>
-            <p className='lg:w-2/3'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias quibusdam officia, numquam aliquam libero rerum cumque sit incidunt minima vitae perspiciatis exercitationem culpa at in?</p>
+            <h3 className='text-2xl lg:text-3xl'>ALUR KERJA KAMI</h3>
+            <h1>Lihat Flow Kami</h1>
+            <p className='lg:w-2/3'>Kami menerapkan proses kerja yang terstruktur, transparan, dan berorientasi pada solusi untuk memastikan setiap kebutuhan perpajakan klien ditangani secara tepat dan profesional.</p>
             <div className='grid grid-cols-1 md:grid-cols-2 gap-5 lg:gap-10 lg:flex lg:flex-row lg:justify-end text-white '>
                 <div className="px-5 py-7 flex-1 flex-col justify-center items-center gap-5 bg-primary  ">
                     <div  className='flex justify-center items-center'>
                         <ChatCentered size={40}/>
                     </div>
                      <div className='flex flex-col justify-center items-center gap-3 mt-2'>
-                        <p className='text-xl lg:text-2xl'>Tell Us Your Problem</p>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur, facilis.</p>
+                        <p className='text-xl lg:text-2xl'>Sampaikan Kebutuhan Anda</p>
+                        <p>Kami mendengarkan dan memahami kebutuhan perpajakan Anda.</p>
                     </div>
                   
                 </div>
@@ -100,8 +100,8 @@ const About = () => {
                         <LightbulbFilament size={40}/>
                     </div>
                     <div className='flex flex-col justify-center items-center gap-3 mt-2'>
-                        <p className='mt-2 text-xl lg:text-2xl'>We're Looking for a Solution</p>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur, facilis.</p>
+                        <p className='mt-2 text-xl lg:text-2xl'>Analisis & Solusi</p>
+                        <p>Solusi disusun berdasarkan regulasi dan praktik terbaik.</p>
                     </div>
                 </div>
                 <div className="px-5 py-7 md:col-span-2 lg:col-span-1 flex-1 flex-col justify-center items-center gap-5 bg-primary ">
@@ -109,8 +109,8 @@ const About = () => {
                         <Handshake size={40}/>
                     </div>
                     <div className='flex flex-col justify-center items-center gap-3 mt-2'>
-                        <p className='text-xl lg:text-2xl'>See The Result of Our Work</p>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur, facilis.</p>
+                        <p className='text-xl lg:text-2xl'>Hasil Optimal</p>
+                        <p>Pelaksanaan tepat, patuh dan memberikan kepastian bagi klien</p>
                     </div>
                 </div>
             </div>
@@ -122,42 +122,42 @@ const About = () => {
     
                 <div className='absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center gap-5 text-center p-4 lg:p-8'>
                         <h2 className='text-xl lg:text-5xl font-medium lg:font-semibold '>
-                            Still Confused With Your <span className='text-choco'>Tax Managing?</span> Get A Consultation
+                            Masih Bingung Mengelola <span className='text-choco'>Pajak Anda?</span> Konsultasikan Sekarang
                         </h2>
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur tempore voluptatem aliquam quibusdam in totam blanditiis asperiores excepturi quas deleniti.
+                            Kami siap membantu Anda mengelola kewajiban perpajakan secara tepat, patuh regulasi, dan efisien. Dapatkan pendampingan profesional sesuai kebutuhan Anda.
                         </p>
-                        <button className='px-5 py-3 lg:px-7 lg:py-3 bg-choco rounded-lg'>Call Us Now</button>
+                        <button className='px-5 py-3 lg:px-7 lg:py-3 bg-choco rounded-lg'>Kontak Kami</button>
                     </div>
                 </div>
         </section>
 
         <section className='py-5 md:py-10 lg:py-20 flex flex-col justify-center items-center gap-10 lg:gap-20'>
-            <div className='flex flex-wrap justify-center items-center gap-10 lg:gap-28 '>
-                <div className='w-60 min-h-36 flex flex-col justify-center items-center gap-1 lg:gap-3 rounded-lg'>
+            <div className='flex flex-wrap justify-center items-center gap-10 lg:gap-28 text-center'>
+                <div className='w-60 min-h-36 flex flex-col justify-center items-center gap-1 lg:gap-3 rounded-lg '>
                     <div className='border p-2 lg:p-3 bg-choco text-white rounded-md'>
                         <ChatCenteredDots size={40} />
                     </div>
-                    <p className='text-lg lg:text-xl'>Cost Saving Ideas</p>
-                    <p>We brigng the rigth people together</p>
+                    <p className='text-lg lg:text-xl'>Efisiensi & Optimalisasi Pajak</p>
+                    <p>Kami membantu mengelola kewajiban pajak secara efisien dan legal untuk mengoptimalkan keuangan bisnis Anda.</p>
                 </div>
                 <div className='w-60 min-h-36 flex flex-col justify-center items-center gap-1 lg:gap-3 rounded-lg'>
                     <div className='border p-2 lg:p-3 bg-choco text-white rounded-md'>
                         <ClipboardText size={40} />
                     </div>
-                    <p className='text-lg lg:text-xl'>Grow Your Business</p>
-                    <p>We brigng the rigth people together</p>
+                    <p className='text-lg lg:text-xl'>Pendampingan Profesional</p>
+                    <p>Didukung tim konsultan berpengalaman yang siap memberikan solusi perpajakan sesuai kebutuhan Anda.</p>
                 </div>
                 <div className='w-60 min-h-36 flex flex-col justify-center items-center gap-1 lg:gap-3 rounded-lg'>
                     <div className='border p-2 lg:p-3 bg-choco text-white rounded-md'>
                         <Handshake size={40} />
                     </div>
-                    <p className='text-lg lg:text-xl'>Award Winning</p>
-                    <p>We brigng the rigth people together</p>
+                    <p className='text-lg lg:text-xl'>Dukungan untuk Pertumbuhan Bisnis</p>
+                    <p>Solusi perpajakan yang tepat membantu bisnis Anda tumbuh lebih stabil dan berkelanjutan.</p>
                 </div>
             </div>
 
-            <section className='w-full'>
+            <section className='w-full py-10'>
                 <Testimonial />
             </section>
         </section>

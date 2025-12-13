@@ -16,7 +16,7 @@ const Header = () => {
   return (
     <>
     {/* <div className='w-screen px-3 md:px-[5%] lg:px-[15%] py-5 flex justify-between items-center bg-primary fixed top-0 left-0 z-50 '> */}
-    <div className='w-screen px-3 md:px-[5%] lg:px-[15%] py-5 flex justify-between items-center bg-primary '>
+    <div className='max-w-screen px-3 md:px-[5%] lg:px-[15%] py-5 flex justify-between items-center bg-primary overflow-hidden '>
       <div className='w-16 lg:w-24 '>
         <img src={logos} alt="" className='w-fit'/>
       </div>
