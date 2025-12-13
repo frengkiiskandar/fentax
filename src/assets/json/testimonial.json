@@ -1,0 +1,37 @@
+[
+    {
+        "name" : "Faravra",
+        "role" : "Software Engineer",
+        "message" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo possimus, excepturi deserunt similique, aut eveniet provident tempora, facilis odit consectetur nobis atque cupiditate qui! Error quis placeat est ipsum amet!",
+        "avatar" : "https://www.alleycat.org/wp-content/uploads/2019/03/FELV-cat.jpg",
+        "rating": 5
+    },
+    {
+        "name" : "Frengki",
+        "role" : "Software Engineer",
+        "message" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo possimus, excepturi deserunt similique, aut eveniet provident tempora, facilis odit consectetur nobis atque cupiditate qui! Error quis placeat est ipsum amet!",
+        "avatar" : "https://www.alleycat.org/wp-content/uploads/2019/03/FELV-cat.jpg",
+        "rating": 5
+    },
+    {
+        "name" : "Iskandar",
+        "role" : "Software Engineer",
+        "message" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo possimus, excepturi deserunt similique, aut eveniet provident tempora, facilis odit consectetur nobis atque cupiditate qui! Error quis placeat est ipsum amet!",
+        "avatar" : "https://i1.sndcdn.com/avatars-GOg9b356UNwp0qIJ-HiOhjA-t240x240.jpg",
+        "rating": 4
+    },
+    {
+        "name" : "Faravra",
+        "role" : "Software Engineer",
+        "message" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo possimus, excepturi deserunt similique, aut eveniet provident tempora, facilis odit consectetur nobis atque cupiditate qui! Error quis placeat est ipsum amet!",
+        "avatar" : "https://www.alleycat.org/wp-content/uploads/2019/03/FELV-cat.jpg",
+        "rating": 5
+    },
+    {
+        "name" : "Tester",
+        "role" : "Software Engineer",
+        "message" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo possimus, excepturi deserunt similique, aut eveniet provident tempora, facilis odit consectetur nobis atque cupiditate qui! Error quis placeat est ipsum amet!",
+        "avatar" : "https://i1.sndcdn.com/avatars-GOg9b356UNwp0qIJ-HiOhjA-t240x240.jpg",
+        "rating": 4
+    }
+]

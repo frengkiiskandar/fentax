@@ -1,7 +1,8 @@
 import person from '../assets/image/person.jpg'
-import person2 from '../assets/image/person2.jpg'
-import showing1 from '../assets/image/showing2.jpg'
+import showing1 from '../assets/image/sthemeit-1.png'
+import computerperson from '../assets/image/computerperson.jpg'
 import { Check, ChatCenteredDots, ClipboardText,UsersFour,Handshake, ChatCentered, LightbulbFilament} from "@phosphor-icons/react";
+import Testimonial from '../components/UI/Testimonial';
 
 
 const About = () => {
@@ -9,7 +10,7 @@ const About = () => {
     <>
       <main className='text-xs lg:text-base'>
             {/* gradient start top page */}
-        <div className='relative w-full h-32 lg:h-72 overflow-hidden'>
+        <div className='relative w-full h-32 lg:h-72 overflow-hidden '>
             <img src={person} alt="" className='w-full h-full object-cover' />
             <div className='absolute inset-0 bg-black bg-opacity-50 flex justify-center items-center text-white'>
                 <h1 className='text-3xl lg:text-5xl font-medium lg:font-bold tracking-wide lg:tracking-widest'>About Us</h1>
@@ -18,9 +19,9 @@ const About = () => {
         {/* gradient stop */}
 
         {/* section start */}
-        <section className='py-10 px-3 md:px-[5%] lg:px-[15%]  flex flex-wrap justify-between items-center gap-5 lg:gap-20'>
-            <div className='w-[400px] h-[200px] lg:h-[300px] overflow-hidden rounded-lg'>
-                <img src={showing1} alt="" className='w-full h-full object-cover' />
+        <section className='py-10 lg:py-20 px-3 md:px-[5%] lg:px-[15%]  flex flex-wrap justify-between items-center gap-5 lg:gap-20 '>
+            <div className='lg:w-450px] lg:h-[500px] overflow-hidden rounded-lg flex flex-col justify-center items-center'>
+                <img src={showing1} alt="" className='lg:w-full h-full object-fill w-3/4' />
             </div>
             <div className='flex-1 py-10 flex flex-col justify-start items-start gap-5'>
                 <h3 className='tont-semibold'>Tax Finance Consultant</h3>
@@ -88,29 +89,36 @@ const About = () => {
                     <div  className='flex justify-center items-center'>
                         <ChatCentered size={40}/>
                     </div>
-                    <p className='text-xl lg:text-2xl'>Tell Us Your Problem</p>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur, facilis.</p>
+                     <div className='flex flex-col justify-center items-center gap-3 mt-2'>
+                        <p className='text-xl lg:text-2xl'>Tell Us Your Problem</p>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur, facilis.</p>
+                    </div>
+                  
                 </div>
                 <div className="px-5 py-7 flex-1 flex-col justify-center items-center gap-5 bg-primary ">
                     <div  className='flex justify-center items-center'>
                         <LightbulbFilament size={40}/>
                     </div>
-                    <p className='mt-2 text-xl lg:text-2xl'>We're Looking for a Solution</p>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur, facilis.</p>
+                    <div className='flex flex-col justify-center items-center gap-3 mt-2'>
+                        <p className='mt-2 text-xl lg:text-2xl'>We're Looking for a Solution</p>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur, facilis.</p>
+                    </div>
                 </div>
                 <div className="px-5 py-7 md:col-span-2 lg:col-span-1 flex-1 flex-col justify-center items-center gap-5 bg-primary ">
                     <div  className='flex justify-center items-center'>
                         <Handshake size={40}/>
                     </div>
-                    <p className='text-xl lg:text-2xl'>See The Result of Our Work</p>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur, facilis.</p>
+                    <div className='flex flex-col justify-center items-center gap-3 mt-2'>
+                        <p className='text-xl lg:text-2xl'>See The Result of Our Work</p>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur, facilis.</p>
+                    </div>
                 </div>
             </div>
         </section>
 
         <section>
             <div className='relative w-full h-56 lg:h-96 border border-blue-70 overflow-hidden text-white'>
-                <img src={person2} alt="" className='object-cover w-full h-full'/>
+                <img src={computerperson} alt="" className='object-cover w-full h-full'/>
     
                 <div className='absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center gap-5 text-center p-4 lg:p-8'>
                         <h2 className='text-xl lg:text-5xl font-medium lg:font-semibold '>
@@ -122,7 +130,36 @@ const About = () => {
                         <button className='px-5 py-3 lg:px-7 lg:py-3 bg-choco rounded-lg'>Call Us Now</button>
                     </div>
                 </div>
+        </section>
 
+        <section className='py-5 md:py-10 lg:py-20 flex flex-col justify-center items-center gap-10 lg:gap-20'>
+            <div className='flex flex-wrap justify-center items-center gap-10 lg:gap-28 '>
+                <div className='w-60 min-h-36 flex flex-col justify-center items-center gap-1 lg:gap-3 rounded-lg'>
+                    <div className='border p-2 lg:p-3 bg-choco text-white rounded-md'>
+                        <ChatCenteredDots size={40} />
+                    </div>
+                    <p className='text-lg lg:text-xl'>Cost Saving Ideas</p>
+                    <p>We brigng the rigth people together</p>
+                </div>
+                <div className='w-60 min-h-36 flex flex-col justify-center items-center gap-1 lg:gap-3 rounded-lg'>
+                    <div className='border p-2 lg:p-3 bg-choco text-white rounded-md'>
+                        <ClipboardText size={40} />
+                    </div>
+                    <p className='text-lg lg:text-xl'>Grow Your Business</p>
+                    <p>We brigng the rigth people together</p>
+                </div>
+                <div className='w-60 min-h-36 flex flex-col justify-center items-center gap-1 lg:gap-3 rounded-lg'>
+                    <div className='border p-2 lg:p-3 bg-choco text-white rounded-md'>
+                        <Handshake size={40} />
+                    </div>
+                    <p className='text-lg lg:text-xl'>Award Winning</p>
+                    <p>We brigng the rigth people together</p>
+                </div>
+            </div>
+
+            <section className='w-full'>
+                <Testimonial />
+            </section>
         </section>
 
 
