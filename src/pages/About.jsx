@@ -1,11 +1,41 @@
 import person from '../assets/image/person.jpg'
+import profile from '../assets/image/profile.jpg'
 import showing1 from '../assets/image/sthemeit-1.png'
 import computerperson from '../assets/image/computerperson.jpg'
-import { Check, ChatCenteredDots, ClipboardText,Handshake,ShieldCheck, ChatCentered, LightbulbFilament,Medal} from "@phosphor-icons/react";
+import { Check,
+    ChatCenteredDots,
+    ClipboardText,
+    InstagramLogo,
+    TwitterLogo,
+    LinkedinLogo,
+    Handshake,
+    ShieldCheck, 
+    ChatCentered,
+    LightbulbFilament,
+    Medal} from "@phosphor-icons/react";
 import Testimonial from '../components/UI/Testimonial';
+
+import team from '../assets/json/team.json'
 
 
 const About = () => {
+
+    const size = () => {
+    const width = window.innerWidth;
+
+  if (width < 768) { 
+    // sm (HP)
+    return 15;
+  } else if (width < 1024) { 
+    // md
+    return 20;
+  } else { 
+    // lg
+    return 25;
+  }
+};
+
+
   return (
     <>
       <main className='text-xs lg:text-base'>
@@ -156,6 +186,35 @@ const About = () => {
                     <p>Solusi perpajakan yang tepat membantu bisnis Anda tumbuh lebih stabil dan berkelanjutan.</p>
                 </div>
             </div>
+
+            {/* meet our team */}
+            <section className='flex flex-col justify-center items-center gap-5 lg:gap-10 '>
+                <h2 className='px-5 py-2 text-black text-xs lg:text-sm bg-accent w-fit rounded-full lg:font-medium'>Tima Kami</h2>
+                <h1 className='text-lg lg:text-3xl'>Meet Our Professional Team</h1>
+                <div className="flex flex-wrap justify-center items-center gap-7">
+                    {team.map((item)=>{
+                        return(
+                        <div>
+                            <div className='flex flex-col justify-center items-start gap-3 pb-3  border-b-[1px] border-gray-300'>
+                                <figure className='w-40 md:w-72 h-[250px] md:h-[400px] border rounded-md overflow-hidden'>
+                                    <img src={`${item.profile}`} alt="" className='w-full h-full object-cover'/>
+                                </figure>
+                                <h3>{item.name} </h3>
+                            </div>
+                        <div className='mt-3 flex justify-between items-center text-gray-400'>
+                            <p>{item.role} </p>
+                            <div className='flex items-center gap-2'>
+                                <a href="#"><InstagramLogo size={size()} /></a>
+                                <a href="#"><TwitterLogo size={size()} /></a>
+                                <a href="#"><LinkedinLogo size={size()} /></a>
+                            </div>
+                        </div>
+                        </div>
+                        )
+                    })}
+                </div>
+
+            </section>
 
             <section className='w-full py-10'>
                 <Testimonial />

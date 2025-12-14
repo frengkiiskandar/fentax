@@ -1,0 +1,34 @@
+[
+    {
+        "name" :"Faravra",
+        "role" : "CEO",
+        "fb" : "http://facebook.com/faravra",
+        "x" : "http://facebook.com/faravra",
+        "ig" : "http://facebook.com/faravra",
+        "profile" : "profile.jpg"
+    },
+    {
+        "name" :"Iskandar",
+        "role" : "Software Engineer",
+        "fb" : "http://facebook.com/faravra",
+        "x" : "http://facebook.com/faravra",
+        "ig" : "http://facebook.com/faravra",
+        "profile" : "profile2.jpg"
+    },
+    {
+        "name" :"Rizky Muliawan",
+        "role" : "Penyamun",
+        "fb" : "http://facebook.com/faravra",
+        "x" : "http://facebook.com/faravra",
+        "ig" : "http://facebook.com/faravra",
+        "profile" : "profile3.jpg"
+    },
+    {
+        "name" :"Ir.Soekarno",
+        "role" : "Project Manager",
+        "fb" : "http://facebook.com/faravra",
+        "x" : "http://facebook.com/faravra",
+        "ig" : "http://facebook.com/faravra",
+        "profile" : "profile4.jpg"
+    }
+]

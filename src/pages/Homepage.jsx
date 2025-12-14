@@ -65,7 +65,7 @@ const Homepage = () => {
             </div>
 
             {/* CLIENT */}
-            <section className='px-0 md:px-10 lg:px-[10%] py-10'>
+            <section className='px-0 md:px-10 lg:px-[10%] pb-10 lg:pb-40 '>
                 <h2 className='py-5 text-center text-white text-3xl'>Our Beloved Client</h2>
                 <div className='flex flex-wrap justify-center items-center gap-3 md:gap-10 '>
                 {clients.map((client)=>(
@@ -102,7 +102,7 @@ const Homepage = () => {
                         <img src={chart} alt="" />
                     </div>
                     <p className='text-xl'>Konsultasi Keuangan</p>
-                    <p className='text-sm'>Solusi keuangan lengkap untuk manajemen pajak efektif</p>
+                    <p className='text-sm'>Solusi keuangan lengkap untuk manajemen pajak yang efektif</p>
                 </div>
             </div>
         </section>
@@ -124,7 +124,7 @@ const Homepage = () => {
             <section className='w-full flex flex-col md:flex-row justify-between items-center gap-10 px-10 md:px-0'>
                 <div className="w-full flex-1 border-t-[1px] border-black py-10  ">
                     <div class="relative inline-block">
-                        <span class="text-4xl">25</span>
+                        <span class="text-3xl lg:text-4xl">25</span>
                         <span class="absolute -top-5 -right-5 text-4xl ">+</span>
                     </div>
                     <p className='text-gray-600 text-sm mt-2'>Pengalaman Konsultasi Pajak</p>
@@ -132,7 +132,7 @@ const Homepage = () => {
 
                 <div className="w-full flex-1 border-t-[1px] border-black py-10">
                     <div class="relative inline-block">
-                        <span class="text-4xl">$ 40 m</span>
+                       <span class="text-3xl lg:text-4xl">$ 40 m</span>
                         <span class="absolute -top-5 -right-5 text-4xl ">+</span>
                     </div>
                     <p className='text-gray-600 text-sm mt-2'>Manfaat optimal untuk klien </p>
@@ -140,7 +140,7 @@ const Homepage = () => {
 
                 <div className="w-full flex-1 border-t-[1px] border-black py-10">
                     <div class="relative inline-block">
-                        <span class="text-4xl">870</span>
+                       <span class="text-3xl lg:text-4xl">870</span>
                         <span class="absolute -top-5 -right-5 text-4xl ">+</span>
                     </div>
                     <p className='text-gray-600 text-sm mt-2'>Proyek perpajakan dan konsultasi selesai</p>
@@ -148,7 +148,7 @@ const Homepage = () => {
 
                 <div className="w-full flex-1 border-t-[1px] border-black py-10">
                     <div class="relative inline-block">
-                        <span class="text-4xl">99.9</span>
+                       <span class="text-3xl lg:text-4xl">99.9</span>
                         <span class="absolute -top-5 -right-5 text-4xl ">%</span>
                     </div>
                     <p className='text-gray-600 text-sm mt-2'>Tingkat kepatuhan klien</p>
@@ -197,35 +197,35 @@ const Homepage = () => {
 
             <section className='py-10 w-full'>
                 <div className='flex flex-col justify-center items-center gap-10 '>
-                    <h3 className='px-5 py-3 lg:px-7 lg:py-3 text-secondary w-fit bg-buttonClr rounded-full font-bold text-sm'>Our Services</h3>
-                    <p>Consulting as Straightforward as It Gets</p>
+                    <h3 className='px-5 py-3 lg:px-7 lg:py-3 text-secondary w-fit bg-buttonClr rounded-full font-bold text-sm'>Layanan Kami</h3>
+                    <p>Konsultasi Profesional dan Terpercaya</p>
                     <div className="w-full  flex flex-wrap justify-between items-center gap-10">
                         <div className='flex-1 py-5 border-t-[1px] border-black'>
                             <div className='flex flex-col justify-start items-start gap-3'>
                                 <img src={test1} alt="" className='w-72 rounded-lg object-cover'/>
-                                <h5 className='text-xl'>Wealth Management</h5>
-                                <p className='text-sm text-gray-600'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi.</p>
+                                <h5 className='text-xl'>Manajemen Kekayaan</h5>
+                                <p className='text-sm text-gray-600'>Membantu mengelola dan mengembangkan aset secara optimal</p>
                             </div>
                         </div>
                         <div className='flex-1 py-5 border-t-[1px] border-black  '>
                             <div className='flex flex-col justify-start items-start gap-3'>
                                 <img src={test2} alt="" className='w-72 rounded-lg object-cover'/>
-                                <h5 className='text-xl'>Taxes & Accounting</h5>
-                                <p className='text-sm text-gray-600'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi.</p>
+                                <h5 className='text-xl'>Pajak & Akuntan Profesional</h5>
+                                <p className='text-sm text-gray-600'>Perencanaan dan pelapoan pajak sesuai peraturan berlaku</p>
                             </div>
                         </div>
                         <div className='flex-1 py-5 border-t-[1px] border-black  '>
                             <div className='flex flex-col justify-start items-start gap-3'>
                                 <img src={test3} alt="" className='w-72 rounded-lg object-cover'/>
-                                <h5 className='text-xl'>Finance Planning</h5>
-                                <p className='text-sm text-gray-600'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi.</p>
+                                <h5 className='text-xl'>Perencanaan FInansial</h5>
+                                <p className='text-sm text-gray-600'>Strategi efektif untuk mencapai tujuan jangka panjang</p>
                             </div>
                         </div>
                         <div className='flex-1 py-5 border-t-[1px] border-black  '>
                             <div className='flex flex-col justify-start items-start gap-3'>
                                 <img src={test4} alt="" className='w-72 rounded-lg object-cover'/>
-                                <h5 className='text-xl'>Business Strategy</h5>
-                                <p className='text-sm text-gray-600'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi.</p>
+                                <h5 className='text-xl'>Strategi Bisnis Profesional</h5>
+                                <p className='text-sm text-gray-600'>Mendukung keputusan bisnis melalui analisis keuangan akurat</p>
                             </div>
                         </div>
                     </div>
@@ -234,10 +234,10 @@ const Homepage = () => {
                         {/* kiri */}
                         <div className='flex-1'>
                             <div className='flex flex-col justify-start items-start gap-5'>
-                                <button className='px-5 py-3 lg:px-7 lg:py-3 text-secondary w-fit bg-buttonClr rounded-full font-bold text-sm'>Get Started</button>
-                                <p className='text-4xl font-semibold'>Nurturing Growth, One Idea at a Time</p>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, assumenda!</p>
-                                <button className='px-8 py-4 bg-choco text-white rounded-lg'>Learn More</button>
+                                <button className='px-5 py-3 lg:px-7 lg:py-3 text-secondary w-fit bg-buttonClr rounded-full font-bold text-sm'>Mulai Sekarang</button>
+                                <p className='text-4xl font-semibold'>Memupuk Pertumbuhan, Satu Ide Dalam Satu Waktu</p>
+                                <p className='text-xs md:text-sm lg:text-base'>Memberikan layanan perpajakan dan konsultasi keuangan yang akurat, patuh terhadap regulasi, serta disesuaikan dengan kebutuhan individu dan bisnis</p>
+                                <button className='px-8 py-4 bg-choco text-white rounded-lg'>Selengkapnya</button>
                             </div>
                         </div>
                         {/* kanan */}

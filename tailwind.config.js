@@ -9,8 +9,8 @@ export default {
       colors: {
         primary: '#1f1b1c',
         secondary: '#69573b',
-        accent: '#d9b87c',
         choco: '#69573b',
+        accent: '#d9b87c',
         buttonClr : 'rgba(226, 192, 127, 0.55)',
         lightcoco: 'rgba(228, 202, 153, 0.55)'
       },
