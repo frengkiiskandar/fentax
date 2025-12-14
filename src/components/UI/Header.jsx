@@ -24,10 +24,10 @@ const Header = () => {
       <nav className='text-gray-300 hidden lg:block'>
         <ul className='flex justify-center items-center gap-8 text-sm'>
           <li><Link to={''}>Home</Link></li>
-          <li><Link to={'/about'}>About</Link></li>
-          <li><Link to={'/about'}>Services</Link></li>
-          <li><Link to={'/about'}>Pages</Link></li>
-          <li><Link to={'/about'}>Contact</Link></li>
+          <li><Link to={'about'}>About</Link></li>
+          <li><Link to={'#'}>Services</Link></li>
+          <li><Link to={'#'}>Pages</Link></li>
+          <li><Link to={'#'}>Contact</Link></li>
         </ul>
       </nav>
 

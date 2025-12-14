@@ -79,7 +79,7 @@ const Homepage = () => {
 
         {/* what we do */}
         <section className='py-24 px-10 md:px-[5%] lg:px-[15%] flex flex-col justify-center items-center gap-10 bg-[#F3F4F2] text-center'>
-            <h3 className='px-5 py-3 lg:px-7 lg:py-3 text-secondary bg-buttonClr rounded-full font-bold text-sm'>What We Do</h3>
+            <h3 className='px-5 py-3 lg:px-7 lg:py-3 text-secondary bg-buttonClr rounded-full font-bold text-xs lg:text-sm'>What We Do</h3>
                         <h1 className='text-3xl'>Transofrmasi , Inovasi, Keberhasilan</h1>
 
             <div className=' flex flex-wrap justify-center items-center gap-7'>
