@@ -25,16 +25,30 @@ const Header = () => {
         <ul className='flex justify-center items-center gap-8 text-sm'>
           <li><Link to={''}>Home</Link></li>
           <li><Link to={'about'}>About</Link></li>
-          <li><Link to={'#'}>Services</Link></li>
+          <li><Link to={'services'}>Services</Link></li>
           <li><Link to={'#'}>Pages</Link></li>
-          <li><Link to={'#'}>Contact</Link></li>
+          <li><Link to={'contact'}>Contact</Link></li>
         </ul>
       </nav>
 
+      <div className="drawer drawer-top lg:hidden w-fit">
+        <input id="my-drawer-5" type="checkbox" className="drawer-toggle" />
+        <div className="drawer-content">
+
+          <label htmlFor="my-drawer-5" className="drawer-button "><List size={30} color="#fafafa" weight="thin" /></label>
+        </div>
+        <div className="drawer-side">
+          <label htmlFor="my-drawer-5" aria-label="close sidebar" className="drawer-overlay"></label>
+          <ul className="menu bg-base-200 min-h-full w-80 p-4">
+
+            <li><a>Sidebar Item 1</a></li>
+            <li><a>Sidebar Item 2</a></li>
+          </ul>
+        </div>
+      </div>
+
       <button className='px-4 py-3 text-xs text-primary font-semibold bg-white rounded-sm hidden lg:block'>Get Started</button>
-      <button className='lg:hidden'>
-        <List size={30} color="#fafafa" weight="thin" />
-      </button>
+      
     </div>
     </>
   )

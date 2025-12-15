@@ -1,5 +1,4 @@
 import person from '../assets/image/person.jpg'
-import profile from '../assets/image/profile.jpg'
 import showing1 from '../assets/image/sthemeit-1.png'
 import computerperson from '../assets/image/computerperson.jpg'
 import { Check,
@@ -38,7 +37,7 @@ const About = () => {
 
   return (
     <>
-      <main className='text-xs lg:text-base'>
+      <main className='text-xs lg:text-base bg-white text-black'>
             {/* gradient start top page */}
         <div className='relative w-full h-32 lg:h-72 overflow-hidden '>
             <img src={person} alt="" className='w-full h-full object-cover' />
@@ -121,7 +120,7 @@ const About = () => {
                     </div>
                      <div className='flex flex-col justify-center items-center gap-3 mt-2'>
                         <p className='text-xl lg:text-2xl'>Sampaikan Kebutuhan Anda</p>
-                        <p>Kami mendengarkan dan memahami kebutuhan perpajakan Anda.</p>
+                        <p>Mendengarkan dan memahami kebutuhan perpajakan</p>
                     </div>
                   
                 </div>
@@ -169,7 +168,7 @@ const About = () => {
                         <ChatCenteredDots size={40} />
                     </div>
                     <p className='text-lg lg:text-xl'>Efisiensi & Optimalisasi Pajak</p>
-                    <p>Kami membantu mengelola kewajiban pajak secara efisien dan legal untuk mengoptimalkan keuangan bisnis Anda.</p>
+                    <p>Membantu mengelola kewajiban pajak secara efisien untuk mengoptimalkan keuangan bisnis Anda.</p>
                 </div>
                 <div className='w-60 min-h-36 flex flex-col justify-center items-center gap-1 lg:gap-3 rounded-lg'>
                     <div className='border p-2 lg:p-3 bg-choco text-white rounded-md'>

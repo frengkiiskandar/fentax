@@ -13,7 +13,7 @@ import Rating from "./Rating";
 
 export default function Testimonial() {
   return (
-    <div className="w-full px-4 ">
+    <div className="w-full px-4  ">
         <div className="flex flex-col justify-center items-center gap-3 ">
             <h3 className='uppercase text-sm lg:text-xl'>Apa Kata Mereka ?</h3>
             <h2 className='text-green-500 text-2xl lg:text-4xl font-medium lg:font-semibold'>Testimoni Kami</h2>

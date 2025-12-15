@@ -33,7 +33,7 @@ const Footer = () => {
   return (
     <>
       <footer className='w-full px-10 lg:px-20 py-10 lg:py-20 flex flex-wrap justify-start items-start gap-20 lg:gap-0 bg-primary text-gray-400 text-xs lg:text-base relative'>
-        <div className='absolute inset-0 border border-red-500 opacity-15 pointer-events-none'>
+        <div className='absolute inset-0 opacity-15 pointer-events-none'>
           <img src={worldmap} alt="" className='w-full h-full object-fill'/>
         </div>
 
