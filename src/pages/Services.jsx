@@ -15,7 +15,7 @@ const Services = () => {
         </div>
 
       {/* Services */}
-        <main className='py-5 px-3 lg:px-20 lg:py-10 text-xs lg:text-sm'>
+        <main className='py-5 px-3 lg:px-20 lg:py-10 text-sm lg:text-base'>
                 <section className='w-full flex flex-col lg:flex-row flex-wrap justify-start items-start gap-5 lg:10'>
                     <div className='w-full lg:w-1/3 '>
                         <div className='p-5 flex flex-col justify-start items-start gap-5 lg:gap-8 bg-primary text-white'>

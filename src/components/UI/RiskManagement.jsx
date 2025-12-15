@@ -5,6 +5,9 @@ import financial from '../../assets/image/riskManagement.jpg'
 import pattern from '../../assets/logo/pattern.jpg'
 import HoverCards from "./HoverCards";
 
+// icons
+import { IoIosArrowForward } from "react-icons/io";
+
 
 const Riskmanagement = () => {
     const reliable = "RELIABILITY"
@@ -15,9 +18,20 @@ const Riskmanagement = () => {
                 <figure className="w-full max-h-[400px] overflow-hidden rounded-lg shadow-lg"> 
                     <img src={financial} alt="" className="w-full"/>
                 </figure>
-                <div className="flex flex-col justify-start items-start gap-5">
+                <div className="py-5 flex flex-col justify-start items-start gap-5">
                     <h2 className="text-xl lg:text-3xl font-medium lg:font-bold">Manajemen Resiko</h2>
-                    <p>Perencanaan finansial adalah strategi terintegrasi untuk mengelola keuangan dan pajak secara optimal, membantu individu dan bisnis mencapai efisiensi, kepatuhan perpajakan, serta pertumbuhan finansial yang berkelanjutan</p>
+                    <div className='lg:w-2/3 flex items-start justify-start gap-2'>
+                        <IoIosArrowForward/>
+                        <p>Memberikan saran dan masukan tentang perpajakan terbaik untuk Anda dan bisnis Anda, dengan mengacu pada Undang-Undang Perpajakan yang berlaku di Indonesia.</p>
+                    </div>
+                    <div className='lg:w-2/3 flex items-start justify-start gap-2'>
+                        <IoIosArrowForward />
+                        <p>Memberikan anda gambaran mendetail tentang solusi praktis dari masalah perpajakan yang anda hadapi.</p>
+                    </div>
+                    <div className='lg:w-2/3 flex items-start justify-start gap-2'>
+                        <IoIosArrowForward />
+                        <p>Memberikan anda gambaran mendetail tentang solusi praktis dari masalah perpajakan yang anda hadapi</p>
+                    </div>
                     <figure className="w-40 h-5  overflow-hidden">
                         <img src={pattern} alt="" />
                     </figure>
