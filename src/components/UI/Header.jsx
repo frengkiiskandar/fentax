@@ -2,6 +2,10 @@ import logos from '../../assets/logo/logos.png'
 import { List  } from "@phosphor-icons/react";
 import { Link } from 'react-router-dom';
 
+
+// icons
+import { IoIosArrowDown } from "react-icons/io";
+
 const App = () => {
   return (
     <main>
@@ -16,7 +20,7 @@ const Header = () => {
   return (
     <>
     {/* <div className='w-screen px-3 md:px-[5%] lg:px-[15%] py-5 flex justify-between items-center bg-primary fixed top-0 left-0 z-50 '> */}
-    <div className='max-w-screen px-3 md:px-[5%] lg:px-[15%] py-5 flex justify-between items-center bg-primary overflow-hidden border-b-[1px] border-gray-700'>
+    <div className='max-w-screen px-3 md:px-[5%] lg:px-[15%] py-5 flex justify-between items-center bg-primary border-b-[1px] border-gray-700'>
       <div className='w-16 lg:w-24 '>
         <img src={logos} alt="" className='w-fit'/>
       </div>
@@ -26,12 +30,18 @@ const Header = () => {
           <li><Link to={''}>Home</Link></li>
           <li><Link to={'about'}>About</Link></li>
           <li><Link to={'services'}>Services</Link></li>
-          <li>
+          <li className='flex items-center gap-2 relative group '>
             <div className="dropdown dropdown-center">
-              <div tabIndex={0} role="button" className="btn m-1">Click  ⬇️</div>
-              <ul tabIndex="-1" className="dropdown-content menu bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm z-50">
-                <li><a>Item 1</a></li>
-                <li><a>Item 2</a></li>
+              <div tabIndex={0} role="button" >
+                <div className='flex items-center gap-2'>
+                  <p>Pages</p>
+                  <IoIosArrowDown />
+                </div>
+              </div>
+              <ul tabIndex="-1" className="dropdown-content menu mt-5 bg-white text-primary rounded-box z-1 w-52 p-4 shadow-sm border">
+                <li><Link to={'whyus'}>Mengapa Kami?</Link></li>
+                <li><Link to={''}>Client</Link></li>
+                <li><Link to={''}>Blog</Link></li>
               </ul>
             </div>
           </li>

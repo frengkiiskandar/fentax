@@ -3,11 +3,15 @@ import Homepage from "../pages/Homepage";
 import Layout from "../components/Layout";
 import About from "../pages/About";
 import Services from "../pages/Services";
-import FinancialPlannig from "../components/UI/FinancialPlannig";
-import ProjectFinance from "../components/UI/ProjectFinance";
-import Riskmanagement from "../components/UI/RiskManagement";
 import Tax from "../components/UI/Tax";
 import Contact from "../pages/Contact";
+import { lazy } from "react";
+import WhyUs from "../pages/WhyUs";
+
+// lazy component untuk di render dengan loading ketika data belum siap
+const FinancialPlannig = lazy(()=> import('../components/UI/FinancialPlannig'))
+const ProjectFinance = lazy(()=> import('../components/UI/ProjectFinance'))
+const RiskManagement = lazy(()=> import('../components/UI/RiskManagement'))
 
 const router = createBrowserRouter([
     {
@@ -30,15 +34,18 @@ const router = createBrowserRouter([
                         path:'projectFinance', element:<ProjectFinance />
                     },
                     {
-                        path:'riskManagement', element:<Riskmanagement />
+                        path:'riskManagement', element:<RiskManagement />
                     },
                     {
                         path:'tax', element:<Tax />
-                    },
+                    }
                 ]
             },
             {
                 path:'contact', element:<Contact />
+            },
+            {
+                path:'whyus', element:<WhyUs />
             },
         ]
     }

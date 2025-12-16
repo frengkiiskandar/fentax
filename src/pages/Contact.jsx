@@ -32,7 +32,7 @@ const Contact = () => {
             <div className='relative w-full h-32 lg:h-72 overflow-hidden '>
                     <img src={person} alt="" className='w-full h-full object-cover' />
                     <div className='absolute inset-0 bg-black bg-opacity-50 flex justify-center items-center text-white'>
-                        <h1 className='text-3xl lg:text-5xl font-medium lg:font-bold tracking-wide lg:tracking-widest'>Kontak Kami</h1>
+                        <h1 className='text-3xl lg:text-5xl font-medium lg:font-bold '>Kontak Kami</h1>
                     </div>
                 </div>
                 

@@ -3,6 +3,8 @@ import { IoArrowForward } from "react-icons/io5";
 import { Link } from "react-router-dom";
 
 import person from '../assets/image/person.jpg'
+import { Suspense } from "react";
+import Loading from "../components/UI/Loading";
 
 const Services = () => {
   return (
@@ -10,7 +12,7 @@ const Services = () => {
         <div className='relative w-full h-32 lg:h-72 overflow-hidden '>
             <img src={person} alt="" className='w-full h-full object-cover' />
             <div className='absolute inset-0 bg-black bg-opacity-50 flex justify-center items-center text-white'>
-                <h1 className='text-3xl lg:text-5xl font-medium lg:font-bold tracking-wide lg:tracking-widest'>Layanan Kami</h1>
+                <h1 className='text-3xl lg:text-5xl font-medium lg:font-bold '>Layanan Kami</h1>
             </div>
         </div>
 
@@ -24,7 +26,7 @@ const Services = () => {
                             <Link to={'riskManagement'}>Manajemen Resiko</Link>
                             <Link to={'tax'}>Perpajakan</Link>
                             <Link to={'riskmanagement'}>Manajemen Starategi</Link>
-                            <Link to={'riskmanagement'}>Proses Pertumbuhan</Link>
+                            <Link to={'tax'}>Proses Pertumbuhan</Link>
                         </div>
         
                         {/* submit form kontak number */}
@@ -45,7 +47,9 @@ const Services = () => {
 
                     {/* kanan outlet konten */}
                     <section className="flex-1">
-                        <Outlet />
+                        <Suspense fallback={<Loading />}>
+                            <Outlet />
+                        </Suspense>
                     </section>        
                 </section>
               </main>
