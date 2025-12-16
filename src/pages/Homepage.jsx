@@ -16,6 +16,10 @@ import business from '../assets/image/business.jpg'
 import triangle from '../assets/logo/triangle.png'
 
 
+// blog
+import blog from '../assets/json/blog.json'
+
+
 const Homepage = () => {
   return (
     <>
@@ -239,7 +243,7 @@ const Homepage = () => {
                             </div>
                         </div>
 
-                        <div className='w-full p-10 bg-lightcoco flex flex-col lg:flex-row justify-between gap-10 items-center rounded-lg'>
+                        <section className='w-full p-10 bg-lightcoco flex flex-col lg:flex-row justify-between gap-10 items-center rounded-lg'>
                             {/* kiri */}
                             <div className='flex-1'>
                                 <div className='flex flex-col justify-start items-start gap-5'>
@@ -264,7 +268,28 @@ const Homepage = () => {
                                 
                                 </div>
                             </div>
-                        </div>
+                        </section>
+
+                        <article className='lg:mt-10 px-5 '>
+                            <h1 className='text-xl lg:text-3xl text-center mb-5'>BLog Post</h1>
+                            <div className='flex flex-wrap justify-center items-center gap-10 lg:gap-12'>
+                                {blog.slice(0,4).map((item)=>{
+                                    return(
+                                           <div className='w-full lg:w-[30rem] overflow-hidden flex flex-col justify-start items-start gap-2'>
+                                                <figure className='w-full h-40 lg:h-60 border overflow-hidden'>
+                                                    <img src={item.image} alt="" className='w-full h-full object-cover hover:scale-110 ease-in-out duration-500' />
+                                                </figure>
+                                                <div>
+                                                    <h2 className='text-blue-500'>{item.heading} </h2>
+                                                    <p className='text-[12px] text-slate-500'>{item.date} </p>
+                                                </div>
+                                                <p className='line-clamp-3 text-sm text-slate-700'>{item.text} </p>
+                                           </div>
+                                    )
+                                })}
+                            </div>
+                            <button className='my-5 px-3 py-2 lg:px-5 lg:py-3 border border-primary hover:bg-choco hover:text-white ease-in-out duration-500'>Lihat Semua - BLog</button>
+                        </article>  
                     
 
                     </div>
