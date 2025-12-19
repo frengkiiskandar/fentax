@@ -7,11 +7,13 @@ import Tax from "../components/UI/Tax";
 import Contact from "../pages/Contact";
 import { lazy } from "react";
 import WhyUs from "../pages/WhyUs";
+import Services2 from "../pages/Services2";
+import KonsultasiPerpajakan from "../components/UI/KonsultasiPerpajakan";
 
-// lazy component untuk di render dengan loading ketika data belum siap
-const FinancialPlannig = lazy(()=> import('../components/UI/FinancialPlannig'))
-const ProjectFinance = lazy(()=> import('../components/UI/ProjectFinance'))
-const RiskManagement = lazy(()=> import('../components/UI/RiskManagement'))
+// // lazy component untuk di render dengan loading ketika data belum siap
+// const FinancialPlannig = lazy(()=> import('../components/UI/FinancialPlannig'))
+// const ProjectFinance = lazy(()=> import('../components/UI/ProjectFinance'))
+// const RiskManagement = lazy(()=> import('../components/UI/RiskManagement'))
 
 const router = createBrowserRouter([
     {
@@ -25,21 +27,24 @@ const router = createBrowserRouter([
                 path:'about', element:<About />
             },
             {
-                path:'services', element:<Services />,
-                children:[
-                    {
-                        index:true, element:<FinancialPlannig />
-                    },
-                    {
-                        path:'projectFinance', element:<ProjectFinance />
-                    },
-                    {
-                        path:'riskManagement', element:<RiskManagement />
-                    },
-                    {
-                        path:'tax', element:<Tax />
-                    }
-                ]
+                path:'services', element:<Services2 />,
+                // children:[
+                //     {
+                //         index:true, element:<FinancialPlannig />
+                //     },
+                //     {
+                //         path:'projectFinance', element:<ProjectFinance />
+                //     },
+                //     {
+                //         path:'riskManagement', element:<RiskManagement />
+                //     },
+                //     {
+                //         path:'tax', element:<Tax />
+                //     }
+                // ]
+            },
+            {
+                path:'services/konsultasiperpajakan', element:<KonsultasiPerpajakan />
             },
             {
                 path:'contact', element:<Contact />
