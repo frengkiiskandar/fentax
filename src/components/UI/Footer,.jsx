@@ -14,6 +14,13 @@ import { FaLinkedin,FaFacebookF } from "react-icons/fa";
 import { MdKeyboardDoubleArrowUp } from "react-icons/md";
 
 const Footer = () => {
+  const scrollTopPage =()=>{
+    window.scrollTo({
+      top:0,
+      left: 0,
+      behavior:'smooth'
+    })
+  }
 
   // size untuk icons
    const size = () => {
@@ -53,7 +60,7 @@ const Footer = () => {
             
             
           </div>
-          <button className='px-5 py-2 flex items-center gap-3 border hover:bg-choco hover:border-none' >
+          <button className='px-5 py-2 flex items-center gap-3 border hover:bg-choco hover:border-none' onClick={scrollTopPage}>
             <MdKeyboardDoubleArrowUp size={size()}/>
             <p>Back to Top</p>
           </button>

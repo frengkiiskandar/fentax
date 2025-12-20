@@ -19,9 +19,26 @@ import triangle from '../assets/logo/triangle.png'
 // blog
 import blog from '../assets/json/blog.json'
 import Tagline from '../components/UI/Tagline'
+import {  useLayoutEffect, useRef } from 'react'
+
+// gsap
+import gsap from 'gsap'
 
 
 const Homepage = () => {
+
+    const welcomeRef = useRef([])
+    useLayoutEffect(()=>{
+        const ctx = gsap.context(()=>{
+            gsap.fromTo(welcomeRef.current,
+                {x:-30, opacity:0},
+                {x:1, opacity:1, duration:1, stagger:0.3,ease:'power3.inOut'}
+            )
+        })
+
+        return()=> ctx.revert()
+    },[])
+
   return (
     <>
     <main className='bg-white text-black'>
@@ -32,8 +49,8 @@ const Homepage = () => {
                         {/* kiri */}
                         <div className='h-full w-full lg:w-1/2 flex flex-col justify-center items-start gap-7  '>
                             <div>
-                                <h1 className='px-3 py-2 text-accent text-xs lg:text-sm bg-choco w-fit rounded-full font-medium lg:font-semibold mb-5'>Selamat Datang</h1>
-                                <h2 className='text-2xl lg:text-[60px] leading-normal text-white font-medium'>Pendamping Pajak Profesional Untuk Bisnis yang Tumbuh
+                                <h1 ref={(element)=>welcomeRef.current[0]= element} className='px-3 py-2 text-accent text-xs lg:text-sm bg-choco w-fit rounded-full font-medium lg:font-semibold mb-5 '>Selamat Datang</h1>
+                                <h2 ref={(element)=>welcomeRef.current[1]= element} className='text-2xl lg:text-[60px] leading-normal text-white font-medium '>Pendamping Pajak Profesional Untuk Bisnis yang Tumbuh
                                     <span className="text-rotate">
                                         <span className="justify-items-start">
                                             <span>Aman</span>
@@ -43,7 +60,7 @@ const Homepage = () => {
                                         </span>
                                 </h2>
                             </div>
-                            <p className='text-gray-300 text-xs lg:text-base'>Dukungan profesionan untuk UMKM, karyawan, freelancer, dan perusahaan yang butuh kepastian dan efisiensi pajak.</p>
+                            <p ref={(element)=>welcomeRef.current[2]=element} className='text-gray-300 text-xs lg:text-base'>Dukungan profesionan untuk UMKM, karyawan, freelancer, dan perusahaan yang butuh kepastian dan efisiensi pajak.</p>
                             <div className='flex justify-start items-center gap-5 lg:gap-10'>
                                 <button className='text-white px-4 py-2 lg:px-7 lg:py-3 rounded-md text-xs lg:text-sm font-medium lg:font-semibold bg-choco'>Hubungi Kami</button>
                                 <button className='text-choco px-4 py-2 lg:px-7 lg:py-3 rounded-md text-xs lg:text-sm font-medium lg:font-semibold bg-white'>Selengkapnya</button>
@@ -137,33 +154,33 @@ const Homepage = () => {
 
                 <section className='w-full flex flex-col md:flex-row justify-between items-center gap-10 px-10 md:px-0'>
                     <div className="w-full flex-1 border-t-[1px] border-black py-10  ">
-                        <div class="relative inline-block">
-                            <span class="text-3xl lg:text-4xl">25</span>
-                            <span class="absolute -top-5 -right-5 text-4xl ">+</span>
+                        <div className="relative inline-block">
+                            <span className="text-3xl lg:text-4xl">25</span>
+                            <span className="absolute -top-5 -right-5 text-4xl ">+</span>
                         </div>
                         <p className='text-gray-600 text-sm mt-2'>Pengalaman Konsultasi Pajak</p>
                     </div>
 
                     <div className="w-full flex-1 border-t-[1px] border-black py-10">
-                        <div class="relative inline-block">
-                        <span class="text-3xl lg:text-4xl">$ 40 m</span>
-                            <span class="absolute -top-5 -right-5 text-4xl ">+</span>
+                        <div className="relative inline-block">
+                        <span className="text-3xl lg:text-4xl">$ 40 m</span>
+                            <span className="absolute -top-5 -right-5 text-4xl ">+</span>
                         </div>
                         <p className='text-gray-600 text-sm mt-2'>Manfaat optimal untuk klien </p>
                     </div>
 
                     <div className="w-full flex-1 border-t-[1px] border-black py-10">
-                        <div class="relative inline-block">
-                        <span class="text-3xl lg:text-4xl">870</span>
-                            <span class="absolute -top-5 -right-5 text-4xl ">+</span>
+                        <div className="relative inline-block">
+                        <span className="text-3xl lg:text-4xl">870</span>
+                            <span className="absolute -top-5 -right-5 text-4xl ">+</span>
                         </div>
                         <p className='text-gray-600 text-sm mt-2'>Proyek perpajakan dan konsultasi selesai</p>
                     </div>
 
                     <div className="w-full flex-1 border-t-[1px] border-black py-10">
-                        <div class="relative inline-block">
-                        <span class="text-3xl lg:text-4xl">99.9</span>
-                            <span class="absolute -top-5 -right-5 text-4xl ">%</span>
+                        <div className="relative inline-block">
+                        <span className="text-3xl lg:text-4xl">99.9</span>
+                            <span className="absolute -top-5 -right-5 text-4xl ">%</span>
                         </div>
                         <p className='text-gray-600 text-sm mt-2'>Tingkat kepatuhan klien</p>
                     </div>

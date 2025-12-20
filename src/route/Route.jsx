@@ -28,20 +28,6 @@ const router = createBrowserRouter([
             },
             {
                 path:'services', element:<Services2 />,
-                // children:[
-                //     {
-                //         index:true, element:<FinancialPlannig />
-                //     },
-                //     {
-                //         path:'projectFinance', element:<ProjectFinance />
-                //     },
-                //     {
-                //         path:'riskManagement', element:<RiskManagement />
-                //     },
-                //     {
-                //         path:'tax', element:<Tax />
-                //     }
-                // ]
             },
             {
                 path:'services/konsultasiperpajakan', element:<KonsultasiPerpajakan />
