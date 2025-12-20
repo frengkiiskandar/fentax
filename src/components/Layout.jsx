@@ -1,13 +1,13 @@
 import { Outlet } from "react-router-dom";
 import Header from "./UI/Header";
 import Footer from "./UI/Footer,";
-import { Suspense, useEffect, useState } from "react";
+import {  useEffect, useState } from "react";
 
 // image
 import fentax from "../assets/image/profile.jpg";
 
 // icon whatsapp
-// import { FaWhatsapp } from "react-icons/fa";
+import { FaWhatsapp } from "react-icons/fa";
 import ScrollToTop from "../utils/ScrollToTop";
 import LoadingUI from "./UI/LoadingUI";
 

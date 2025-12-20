@@ -83,7 +83,7 @@ const Services2 = () => {
           <div className="flex-1 py-5 border-t-[1px] border-black ">
             <div className="flex flex-col justify-start items-start gap-3 ">
               <div className="relative group ">
-                <div className="absolute inset-0 bg-black bg-opacity-75 rounded-md hidden group-hover:flex justify-center items-center">
+                <div className="absolute inset-0 bg-black transition-colors duration-150 bg-opacity-75 rounded-md hidden group-hover:flex justify-center items-center">
                   <button className="text-white lg:text-lg underline text-xs ">
                     Selengkapnya
                   </button>
@@ -125,7 +125,7 @@ const Services2 = () => {
       </section>
 
       <section
-        className="w-full px-3 md:px-[5%] lg:px-[15%] py-10 lg:py-20 flex flex-col justify-start items-start gap-10 bg-black text-white relative"
+        className="w-full px-5 md:px-[5%] lg:px-[15%] py-10 lg:py-20 flex flex-col justify-start items-start gap-10 bg-black text-white relative"
         style={{
           backgroundImage: `url(${business})`,
           backgroundRepeat: "no-repeat",
@@ -209,12 +209,21 @@ const Services2 = () => {
           <div className="collapse collapse-arrow bg-base-100 border border-base-300">
             <input type="radio" name="my-accordion-2" />
             <div className="collapse-title font-semibold">
-              <p>How do I update my profile information?</p>
+              <p>Apa yang membuat Fentax berbeda dengan yang lain ?</p>
             </div>
             <div className="collapse-content text-sm">
                 <p className="text-slate-500 text-xs">OVERVIEW</p>
-              <p>Go to "My Account" settings and select "Edit Profile" to make
-              changes.</p>
+              <p>Kami bukan hanya sekedar tukang hitung, kami ingin mengedukasi dan memberikan anda pengetahuan lebih. Kami bukan hanya sekedar tukang catat, tetapi kami juga peduli terhadap perkembangan bisnis dan kondisi keuangan anda. Kami bukan hanya sekedar konsultan biasa, kami ingin memastikan perusahaan anda mendapat benefit yang positif dari kami</p>
+            </div>
+          </div>
+          <div className="collapse collapse-arrow bg-base-100 border border-base-300">
+            <input type="radio" name="my-accordion-2" />
+            <div className="collapse-title font-semibold">
+              <p>Apakah Fentax memberikan jaminan 100% aman dari pajak?</p>
+            </div>
+            <div className="collapse-content text-sm">
+                <p className="text-slate-500 text-xs">OVERVIEW</p>
+              <p>Tugas kami adalah mempersiapkan, merapikan, menjalankan semua ketentuan perpajakan di Indonesia dalam perusahaan anda, agar kita tidak melanggar ketentuan. Orang yang sudah menjaga kesehatan dengan makan dan olahraga teratur saja masih bisa sakit bukan? Akan tetapi resikonya lebih kecil daripada kita makan sembarangan, begadang sampe pagi dan tidak pernah olahraga. Analogi nya seperti itu</p>
             </div>
           </div>
         </div>
