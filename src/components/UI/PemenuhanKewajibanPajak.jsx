@@ -1,4 +1,4 @@
-import Testimonial from '../UI/Testimonial'
+import Testimonial from './Testimonial'
 
 // image
 import person from "../../assets/image/person.jpg";
@@ -7,7 +7,7 @@ import test1 from "../../assets/image/test1.jpg";
 import { UserCircleCheck, Chat, CheckFat } from "@phosphor-icons/react";
 import Experienced from './Experienced';
 
-const KonsultasiPerpajakan = () => {
+const AkuntanProfesional = () => {
   const size = () => {
     const width = window.innerWidth;
 
@@ -28,7 +28,7 @@ const KonsultasiPerpajakan = () => {
         <img src={person} alt="" className="w-full h-full object-cover" />
         <div className="absolute inset-0 bg-black bg-opacity-50 flex justify-center items-center text-white">
           <h1 className="text-xl lg:text-5xl font-medium lg:font-bold ">
-            Konsultasi Perpajakan
+            Akuntan Profesional
           </h1>
         </div>
       </div>
@@ -77,7 +77,7 @@ const KonsultasiPerpajakan = () => {
         </figure>
 
         <div className="flex flex-1 flex-col justify-items-start items-start gap-5 lg:gap-8">
-          <h1 className="text-2xl lg:text-4xl">Konsultasi Perpajakan</h1>
+          <h1 className="text-2xl lg:text-4xl">Pemenuhan Kewajiban Pajak</h1>
             <p>
               Get a complete bookkeeping solution for your business including :
               bank reconciliations, cusromer incoiving and collections and more
@@ -114,4 +114,4 @@ const KonsultasiPerpajakan = () => {
   );
 };
 
-export default KonsultasiPerpajakan;
+export default AkuntanProfesional;

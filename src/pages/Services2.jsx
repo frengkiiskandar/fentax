@@ -62,9 +62,11 @@ const Services2 = () => {
             <div className="flex flex-col justify-start items-start gap-3 ">
               <div className="relative group ">
                 <div className="absolute inset-0 bg-black bg-opacity-75 rounded-md hidden group-hover:flex justify-center items-center">
-                  <button className="text-white lg:text-lg underline text-xs ">
-                    Selengkapnya
-                  </button>
+                  <Link to={"/services/pemenuhankewajibanPajak"}>
+                    <button className="text-white lg:text-lg underline text-xs ">
+                      Selengkapnya
+                    </button>
+                  </Link>
                 </div>
                 <img
                   src={test2}
@@ -72,7 +74,7 @@ const Services2 = () => {
                   className="w-72 rounded-lg object-cover"
                 />
               </div>
-              <h5 className="text-xl">Pajak & Akuntan Profesional</h5>
+              <h5 className="text-xl">Pemenuhan Kewajiban Pajak</h5>
               <p className="text-sm text-gray-600">
                 Perencanaan dan pelapoan pajak sesuai peraturan berlaku
               </p>

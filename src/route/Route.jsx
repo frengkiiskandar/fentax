@@ -9,6 +9,7 @@ import { lazy } from "react";
 import WhyUs from "../pages/WhyUs";
 import Services2 from "../pages/Services2";
 import KonsultasiPerpajakan from "../components/UI/KonsultasiPerpajakan";
+import PemenuhanKewajibanPajak from '../components/UI/PemenuhanKewajibanPajak'
 
 // // lazy component untuk di render dengan loading ketika data belum siap
 // const FinancialPlannig = lazy(()=> import('../components/UI/FinancialPlannig'))
@@ -31,6 +32,9 @@ const router = createBrowserRouter([
             },
             {
                 path:'services/konsultasiperpajakan', element:<KonsultasiPerpajakan />
+            },
+            {
+                path:'services/pemenuhankewajibanPajak', element:<PemenuhanKewajibanPajak />
             },
             {
                 path:'contact', element:<Contact />

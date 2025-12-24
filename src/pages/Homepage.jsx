@@ -27,12 +27,19 @@ import gsap from 'gsap'
 
 const Homepage = () => {
 
-    const welcomeRef = useRef([])
+    const welcomeLeftRef = useRef([])
+    const welcomeRightRef = useRef([])
+
+
     useLayoutEffect(()=>{
         const ctx = gsap.context(()=>{
-            gsap.fromTo(welcomeRef.current,
-                {x:-30, opacity:0},
-                {x:1, opacity:1, duration:1, stagger:0.3,ease:'power3.inOut'}
+            gsap.fromTo(welcomeLeftRef.current,
+                {x:-40, opacity:0},
+                {x:1, opacity:1, duration:2, stagger:0.3,ease:'power1'}
+            )
+            gsap.fromTo(welcomeRightRef.current,
+                {x:40, opacity:0},
+                {x:1, opacity:1, duration:2, stagger:0.3,ease:'power1.inOut'}
             )
         })
 
@@ -49,8 +56,8 @@ const Homepage = () => {
                         {/* kiri */}
                         <div className='h-full w-full lg:w-1/2 flex flex-col justify-center items-start gap-7  '>
                             <div>
-                                <h1 ref={(element)=>welcomeRef.current[0]= element} className='px-3 py-2 text-accent text-xs lg:text-sm bg-choco w-fit rounded-full font-medium lg:font-semibold mb-5 '>Selamat Datang</h1>
-                                <h2 ref={(element)=>welcomeRef.current[1]= element} className='text-2xl lg:text-[60px] leading-normal text-white font-medium '>Pendamping Pajak Profesional Untuk Bisnis yang Tumbuh
+                                <h1 ref={(element)=>welcomeLeftRef.current[0]= element} className='px-3 py-2 text-accent text-xs lg:text-sm bg-choco w-fit rounded-full font-medium lg:font-semibold mb-5 '>Selamat Datang</h1>
+                                <h2 ref={(element)=>welcomeLeftRef.current[1]= element} className='text-2xl lg:text-[60px] leading-normal text-white font-medium '>Pendamping Pajak Profesional Untuk Bisnis yang Tumbuh
                                     <span className="text-rotate">
                                         <span className="justify-items-start">
                                             <span>Aman</span>
@@ -60,20 +67,20 @@ const Homepage = () => {
                                         </span>
                                 </h2>
                             </div>
-                            <p ref={(element)=>welcomeRef.current[2]=element} className='text-gray-300 text-xs lg:text-base'>Dukungan profesionan untuk UMKM, karyawan, freelancer, dan perusahaan yang butuh kepastian dan efisiensi pajak.</p>
+                            <p ref={(element)=>welcomeLeftRef.current[2]=element} className='text-gray-300 text-xs lg:text-base'>Dukungan profesionan untuk UMKM, karyawan, freelancer, dan perusahaan yang butuh kepastian dan efisiensi pajak.</p>
                             <div className='flex justify-start items-center gap-5 lg:gap-10'>
-                                <button className='text-white px-4 py-2 lg:px-7 lg:py-3 rounded-md text-xs lg:text-sm font-medium lg:font-semibold bg-choco'>Hubungi Kami</button>
-                                <button className='text-choco px-4 py-2 lg:px-7 lg:py-3 rounded-md text-xs lg:text-sm font-medium lg:font-semibold bg-white'>Selengkapnya</button>
+                                <button ref={(element)=>welcomeLeftRef.current[3]=element} className='text-white px-4 py-2 lg:px-7 lg:py-3 rounded-md text-xs lg:text-sm font-medium lg:font-semibold bg-choco'>Hubungi Kami</button>
+                                <button ref={(element)=>welcomeLeftRef.current[4] = element} className='text-choco px-4 py-2 lg:px-7 lg:py-3 rounded-md text-xs lg:text-sm font-medium lg:font-semibold bg-white'>Selengkapnya</button>
                             </div>
                             <div className='w-full flex justify-start items-center gap-10 lg:gap-20  border-gray-500 text-white mt-5 text-xs lg:text-sm'>
-                                <div className='flex-1 flex-col justify-start items-start gap-3 py-5 md:py-10 border-t-[1px] border-gray-600 '>
+                                <div ref={(element)=>welcomeLeftRef.current[5] = element}  className='flex-1 flex-col justify-start items-start gap-3 py-5 md:py-10 border-t-[1px] border-gray-600 '>
                                     <div className="flex">
                                         <Rating rating={4.5}/>
                                     </div>
                                     <p className='mt-3'>4.5/5</p>
                                     <p>Dari lebih 1000 review</p>
                                 </div>
-                                <div className='flex-1 flex-col justify-start items-start gap-3 py-5 md:py-10 border-t-[1px] border-gray-600'>
+                                <div ref={(element)=>welcomeLeftRef.current[6] = element}  className='flex-1 flex-col justify-start items-start gap-3 py-5 md:py-10 border-t-[1px] border-gray-600'>
                                     <div className="flex">
                                         <Rating rating={4.5}/>
                                     </div>
@@ -84,7 +91,7 @@ const Homepage = () => {
                         </div>
                         
                         {/* kanan */}
-                        <div className='bg-primary h-[250px] w-full lg:w-[500px] lg:h-[750px] p-5 rounded-lg relative' style={{backgroundImage:`url(${hero})`, backgroundSize:'cover', backgroundPosition:'center', backgroundRepeat:'no-repeat', backgroundColor:'#1f1b1c'}}>
+                        <div ref={(element)=>welcomeRightRef.current[0]=element} className='bg-primary h-[250px] w-full lg:w-[500px] lg:h-[750px] p-5 rounded-lg relative' style={{backgroundImage:`url(${hero})`, backgroundSize:'cover', backgroundPosition:'center', backgroundRepeat:'no-repeat', backgroundColor:'#1f1b1c'}}>
                         <div className='flex flex-wrap justify-start items-end gap-2 lg:gap-5 absolute bottom-5'>
                             <p className='bg-gray-500/40 text-white p-2 text-xs lg:text-base lg:px-3 lg:py-2 backdrop-blur-xs rounded-xl'>Finance Planning</p>
                             <p className='bg-gray-500/40 text-white p-2 text-xs lg:text-base lg:px-3 lg:py-2 backdrop-blur-xs rounded-xl'>Investor Management</p>
